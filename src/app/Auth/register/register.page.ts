@@ -18,7 +18,7 @@ export class registerPage implements OnInit {
   Username: string="";
   Password: string ="";
   Email : string ="";
-  ddlRole : int ="";
+  ddlRole : string ="";
   constructor(
     // private http: HTTP
 
