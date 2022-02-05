@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center" style="font-weight: bold;">User Registration</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <!-- <div class="ion-padding"> -->
+
+  <ion-item class="input-box">
+      <ion-label class="label"  position="floating">User Name</ion-label>
+      <ion-input  [(ngModel)]="Username" type="text"></ion-input>
+  </ion-item>
+  <ion-item class="input-box"> 
+    <ion-label class="label" position="floating">Password</ion-label>
+    <ion-input  [(ngModel)]="Password" type="Password"></ion-input>
+  </ion-item>
+  <ion-item class="input-box">
+    <ion-label class="label" position="floating">Email</ion-label>
+    <ion-input [(ngModel)]="Email" type="text"></ion-input>
+  </ion-item>
+  <ion-item class="input-box">
+    <ion-label class="label">User Role</ion-label>
+      <ion-select [(ngModel)]="ddlRole">
+      <ion-select-option value="1">Admin</ion-select-option>
+      <ion-select-option value="2">User</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <div class="ion-text-center">
+    <ion-button (click)="onSubmit()">Register</ion-button>
+  </div>
+ <!-- </div> -->
+
+</ion-content>
