@@ -18,7 +18,7 @@ export class registerPage implements OnInit {
   Username: string="";
   Password: string ="";
   Email : string ="";
-  ddlRole : string ="";
+  RoleID : string ="";
   constructor(
     // private http: HTTP
 
@@ -32,7 +32,7 @@ export class registerPage implements OnInit {
   }
   onSubmit()
   {
-    let getval=this.crudOpr.insertValues(this.Username,this.Password,this.Email,this.ddlRole)
+    let getval=this.crudOpr.insertValues(this.Username,this.Password,this.Email,this.RoleID)
     this.Username="";
     this.Password="";
     this.Email="";

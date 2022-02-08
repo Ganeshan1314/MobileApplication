@@ -1,56 +1,31 @@
-# Prerequisites
-*.d
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+*~
+*.sw[mnpcod]
+.tmp
+*.tmp
+*.tmp.*
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+$RECYCLE.BIN/
 
-# Precompiled Headers
-*.gch
-*.pch
+*.log
+log.txt
+npm-debug.log*
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-*.pack
-*.pack
-*.pack
-*.cmd
-node_modules/.bin/blocking-proxy.ps1
-*.ps1
-*.ps1
-*.ts
-*.ts
-*.js
-*.js
-*.json
-*.md
-node_modules/@angular-devkit/build-webpack/LICENSE
-*.map
-node_modules/@angular-devkit/core/LICENSE
-*.bazel
-*.bazel
-*.bazel
-node_modules/@angular-devkit/schematics/LICENSE
-node_modules/@angular-eslint/builder/LICENSE
-*.mjs
-node_modules/@babel/helper-function-name/LICENSE
-node_modules/@babel/helper-function-name/LICENSE
+/.idea
+/.ionic
+/.sass-cache
+/.sourcemaps
+/.versions
+/.vscode
+/coverage
+/dist
+/node_modules
+/platforms
+/plugins
+/www

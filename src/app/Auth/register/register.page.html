@@ -5,8 +5,6 @@
 </ion-header>
 
 <ion-content>
- <!-- <div class="ion-padding"> -->
-
   <ion-item class="input-box">
       <ion-label class="label"  position="floating">User Name</ion-label>
       <ion-input  [(ngModel)]="Username" type="text"></ion-input>
@@ -21,7 +19,7 @@
   </ion-item>
   <ion-item class="input-box">
     <ion-label class="label">User Role</ion-label>
-      <ion-select [(ngModel)]="ddlRole">
+      <ion-select [(ngModel)]="RoleID">
       <ion-select-option value="1">Admin</ion-select-option>
       <ion-select-option value="2">User</ion-select-option>
     </ion-select>
@@ -29,6 +27,4 @@
   <div class="ion-text-center">
     <ion-button (click)="onSubmit()">Register</ion-button>
   </div>
- <!-- </div> -->
-
-</ion-content>
+ </ion-content>

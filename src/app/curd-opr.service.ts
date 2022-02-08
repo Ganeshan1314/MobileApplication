@@ -9,16 +9,16 @@ import * as $ from "jquery";
 })
 export class CurdOprService {
 
-  liveapipath: string = 'https://localhost:44383//api';
+  liveapipath: string = 'http://localhost:83///api';
 
   constructor(
     private http: HttpClient
 
   ) { }
 
-  insertValues(Username,Password,Email,Role)
+  insertValues(Username,Password,Email,RoleID)
   {
-      var livepath="https://localhost:44383//api";
+      var livepath="http://localhost:83///api";
       if(Username != "" || Password != "" || Email != "")
       {
           $.ajax
@@ -30,14 +30,10 @@ export class CurdOprService {
               Username,
               Password,
               Email,
-              Role
+              RoleID
             },
             success: function (message) {
-              Username="";
-              Password="";
-              Email="";
-              Role=""
-                alert(message);
+              alert(message);
             }
           })
       }
