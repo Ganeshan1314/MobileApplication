@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HTTP} from '@awesome-cordova-plugins/http/ngx';
-import {
- 
-  HttpClient
-} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { CurdOprService } from 'src/app/curd-opr.service';
 
@@ -36,6 +33,7 @@ export class registerPage implements OnInit {
     this.Username="";
     this.Password="";
     this.Email="";
+    this.RoleID="0";
   }
 }
 

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center" style="font-weight: bold;">User Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item class="input-box">
+    <ion-label class="label"  position="floating">User Name</ion-label>
+    <ion-input [(ngModel)]="userName" type="text"></ion-input>
+  </ion-item>
+  <ion-item class="input-box">
+    <ion-label class="label"  position="floating">Password</ion-label>
+    <ion-input [(ngModel)]="passWord" type="text"></ion-input>
+  </ion-item>
+  <div class="ion-text-center">
+    <ion-button (click)="btnLoginClick()">Login</ion-button>
+  </div>
+</ion-content>

@@ -18,13 +18,16 @@ export class CurdOprService {
 
   insertValues(Username,Password,Email,RoleID)
   {
-      var livepath="http://localhost:83///api";
+    
+      //  var livepath="http://localhost:83///api";
+      var livepath="http://localhost:44383///api";
       if(Username != "" || Password != "" || Email != "")
       {
           $.ajax
           ({
             type: "get",
-            url: livepath+"/login/Registration",
+            // url:"http://localhost:44383/api/Login/Registration",
+            url:"http://localhost:83/api/login/Registration",
             dataType: "json",
             data:{
               Username,
