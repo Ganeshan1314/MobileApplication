@@ -10,7 +10,6 @@ import * as $ from "jquery";
 export class CurdOprService {
 
   liveapipath: string = 'http://localhost:83///api';
-
   constructor(
     private http: HttpClient
 
@@ -18,7 +17,6 @@ export class CurdOprService {
 
   insertValues(Username,Password,Email,RoleID)
   {
-    
       //  var livepath="http://localhost:83///api";
       var livepath="http://localhost:44383///api";
       if(Username != "" || Password != "" || Email != "")

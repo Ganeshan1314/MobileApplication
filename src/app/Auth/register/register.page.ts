@@ -18,13 +18,11 @@ export class registerPage implements OnInit {
   RoleID : string ="";
   constructor(
     // private http: HTTP
-
     private http: HttpClient,
     private crudOpr: CurdOprService
         ) {
       this.onSubmit()
-
-     }
+    }
   ngOnInit() {
   }
   onSubmit()
